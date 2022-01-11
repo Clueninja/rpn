@@ -31,8 +31,7 @@ pub mod rpn{
                 
             }
         }
-        stack.pop().unwrap()
-
+        return stack.pop().unwrap()
     }
 }
 #[test]
