@@ -1,5 +1,4 @@
 pub mod rpn{
-
     pub fn rpn(string: &Vec<String>)->f64{
         let mut stack: Vec<f64> = Vec::new();
         for argument in string{
@@ -31,7 +30,7 @@ pub mod rpn{
                 
             }
         }
-        return stack.pop().unwrap()
+        stack.pop().unwrap()
     }
 }
 #[test]
